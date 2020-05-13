@@ -5,8 +5,8 @@
 }
 
 body {
-  background-image: url(https://www.jota.info/wp-content/uploads/2018/11/faae4e62c047132388af8a4dc3200a78.jpg);
-  background-size: auto 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: auto 200vh;
   font-family: italic;
   font-size: 13px;
 }
@@ -60,27 +60,57 @@ a:hover {
 }
 
 .site-title,
-.site-subtitle
-{
+.site-subtitle {
   text-align: center;
   color: whitesmoke;
+  font-family: 'Bungee Outline', cursive;
 }
 
 .site-title {
   font-size: 3em;
 }
 
-.img-games {
-  width: 200px;
-  height: 200px;
+.games {
+  padding: 2em;
+} 
+
+.games h2 {
+  color: whitesmoke;
+  font-family: 'Bungee Outline', cursive;
+  margin-bottom: 1.5em;
 }
 
-section h2 {
-  color: white;
+.games .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .games .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 830px) {
+  .games .grid {
+    grid-template-columns: 240px 240px 240px;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.games figure {
+  text-align: center;
+}
+
+.img-games {
+  width:230px;
+  height: 200px;
+  border-radius: 17%;
 }
 
 figcaption {
   color: white;
   font-family: Arial;
-  font-size: 14px;
+  font-size: 18px;
 }
